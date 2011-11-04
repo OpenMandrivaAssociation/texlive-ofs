@@ -1,3 +1,9 @@
+# revision 16991
+# category Package
+# catalog-ctan /macros/generic/ofs
+# catalog-date 2010-02-12 21:26:56 +0100
+# catalog-license knuth
+# catalog-version undef
 Name:		texlive-ofs
 Version:	20100212
 Release:	1
@@ -87,6 +93,7 @@ fonts.
 %doc %{_texmfdistdir}/doc/generic/ofs/ofsmtdef.tex
 %doc %{_texmfdistdir}/doc/generic/ofs/ofstest.tex
 %doc %{_texmfdistdir}/doc/generic/ofs/readme.ofs
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -97,3 +104,5 @@ fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
