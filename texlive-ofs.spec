@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ofs
 Version:	20100212
-Release:	5
+Release:	6
 Summary:	Macros for managing large font collections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/ofs
