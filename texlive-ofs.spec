@@ -5,8 +5,8 @@
 # catalog-license knuth
 # catalog-version undef
 Name:		texlive-ofs
-Version:	20180303
-Release:	3
+Version:	20190228
+Release:	1
 Summary:	Macros for managing large font collections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/ofs
