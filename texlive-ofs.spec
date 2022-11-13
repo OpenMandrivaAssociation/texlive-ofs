@@ -1,18 +1,12 @@
-# revision 16991
-# category Package
-# catalog-ctan /macros/generic/ofs
-# catalog-date 2010-02-12 21:26:56 +0100
-# catalog-license knuth
-# catalog-version undef
 Name:		texlive-ofs
-Version:	20190228
+Version:	16991
 Release:	1
 Summary:	Macros for managing large font collections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/ofs
 License:	KNUTH
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -34,12 +28,12 @@ even be better than NFSS) - Support for math fonts including TX
 fonts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -87,24 +81,10 @@ fonts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100212-2
-+ Revision: 754504
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100212-1
-+ Revision: 719154
-- texlive-ofs
-- texlive-ofs
-- texlive-ofs
-- texlive-ofs
-
