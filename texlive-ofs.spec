@@ -1,6 +1,6 @@
 Name:		texlive-ofs
 Version:	16991
-Release:	1
+Release:	2
 Summary:	Macros for managing large font collections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/ofs
