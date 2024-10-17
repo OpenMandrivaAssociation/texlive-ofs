@@ -3,7 +3,7 @@ Version:	16991
 Release:	2
 Summary:	Macros for managing large font collections
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/ofs
+URL:		https://www.ctan.org/tex-archive/macros/generic/ofs
 License:	KNUTH
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ofs.doc.r%{version}.tar.xz
